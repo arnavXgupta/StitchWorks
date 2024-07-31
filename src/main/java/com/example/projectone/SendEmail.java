@@ -10,9 +10,9 @@ public class SendEmail {
     public static void SendEmail(String to, String Subj, String emailBody) {
 //        String to = "destinationemail@gmail.com";
 
-        String from = "itzarnav0404@gmail.com";
-        final String username = "itzarnav0404@gmail.com";
-        final String password = "guptaarnav123";
+        String from = "***";
+        final String username = "***";
+        final String password = "***";
 
         String host = "smtp.gmail.com";
 
