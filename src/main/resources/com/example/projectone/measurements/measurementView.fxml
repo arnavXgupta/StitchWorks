@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="536.0" prefWidth="728.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projectone.measurement.measurementController">
+    <children>
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="221.0" layoutY="14.0" prefHeight="27.0" prefWidth="189.0" text="Measurement">
+            <font>
+                <Font name="Comic Sans MS Bold" size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="68.0" layoutY="59.0" prefHeight="26.0" prefWidth="122.0" text="Mobile Number">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <TextField fx:id="getmobile" layoutX="68.0" layoutY="81.0" prefHeight="26.0" prefWidth="189.0" />
+        <Label layoutX="68.0" layoutY="119.0" prefHeight="26.0" prefWidth="122.0" text="Dress">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <ComboBox fx:id="getDress" editable="true" layoutX="68.0" layoutY="146.0" prefHeight="26.0" prefWidth="190.0" />
+        <Label layoutX="349.0" layoutY="75.0" prefHeight="26.0" prefWidth="122.0" text="Design">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Button layoutX="427.0" layoutY="74.0" mnemonicParsing="false" onAction="#doUpload" prefHeight="26.0" prefWidth="100.0" text="Upload" />
+        <ImageView fx:id="imgprev" fitHeight="139.0" fitWidth="182.0" layoutX="346.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@nopic.jpg" />
+            </image>
+        </ImageView>
+        <Label layoutX="68.0" layoutY="187.0" prefHeight="26.0" prefWidth="122.0" text="Date of Delivery">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <DatePicker fx:id="dod" layoutX="68.0" layoutY="208.0" prefHeight="26.0" prefWidth="190.0" />
+        <Label layoutX="68.0" layoutY="249.0" prefHeight="26.0" prefWidth="122.0" text="Quantity">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <ComboBox fx:id="getQuantity" editable="true" layoutX="68.0" layoutY="275.0" prefWidth="150.0" />
+        <Label layoutX="260.0" layoutY="249.0" prefHeight="26.0" prefWidth="122.0" text="Price per. Unit">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <TextField fx:id="getPrice" layoutX="260.0" layoutY="274.0" onKeyPressed="#dobill" prefHeight="26.0" prefWidth="122.0" />
+        <Label layoutX="421.0" layoutY="249.0" prefHeight="26.0" prefWidth="122.0" text="Bill">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <TextField fx:id="getbill" layoutX="418.0" layoutY="274.0" prefHeight="26.0" prefWidth="122.0" />
+        <Label layoutX="68.0" layoutY="329.0" prefHeight="26.0" prefWidth="122.0" text="Measurement">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <TextArea fx:id="measureDetail" layoutX="68.0" layoutY="355.0" prefHeight="100.0" prefWidth="471.0" />
+        <Button layoutX="186.0" layoutY="326.0" mnemonicParsing="false" onAction="#doExist" prefHeight="27.0" prefWidth="150.0" text="Pick Existing if any" />
+        <Label layoutX="68.0" layoutY="466.0" prefHeight="26.0" prefWidth="122.0" text="Workers">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <ComboBox fx:id="getWorkers" layoutX="68.0" layoutY="492.0" prefHeight="26.0" prefWidth="190.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f0f3f7" height="259.0" layoutX="598.0" layoutY="105.0" stroke="BLACK" strokeType="INSIDE" width="130.0" />
+        <Button layoutX="617.0" layoutY="137.0" mnemonicParsing="false" onAction="#doNew" prefHeight="27.0" prefWidth="78.0" text="New">
+            <font>
+                <Font name="System Italic" size="14.0" />
+            </font>
+        </Button>
+        <Button layoutX="617.0" layoutY="188.0" mnemonicParsing="false" onAction="#doSave" prefHeight="27.0" prefWidth="78.0" text="Save">
+            <font>
+                <Font name="System Italic" size="14.0" />
+            </font>
+        </Button>
+        <Button layoutX="621.0" layoutY="242.0" mnemonicParsing="false" onAction="#doUpdate" prefHeight="27.0" prefWidth="78.0" text="Update">
+            <font>
+                <Font name="System Italic" size="14.0" />
+            </font>
+        </Button>
+        <Button layoutX="621.0" layoutY="292.0" mnemonicParsing="false" onAction="#doClose" prefHeight="27.0" prefWidth="78.0" text="Close">
+            <font>
+                <Font name="System Italic" size="14.0" />
+            </font>
+        </Button>
+        <TextField fx:id="orderID" layoutX="399.0" layoutY="479.0" prefHeight="30.0" prefWidth="190.0" promptText="Order ID">
+            <font>
+                <Font name="Garamond Bold" size="22.0" />
+            </font>
+        </TextField>
+        <Button layoutX="613.0" layoutY="486.0" mnemonicParsing="false" onAction="#doSearch" prefHeight="30.0" prefWidth="100.0" text="Search">
+            <font>
+                <Font name="System Italic" size="14.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>

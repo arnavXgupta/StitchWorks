@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projectone.workerShow.showWorkerController">
+   <children>
+      <Label alignment="CENTER" prefHeight="37.0" prefWidth="600.0" style="-fx-background-color: #0d7021;" text="Worker Database" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS Bold" size="19.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="getDress" layoutX="137.0" layoutY="73.0" onAction="#selectSplz" prefWidth="150.0" />
+      <Label layoutX="36.0" layoutY="77.0" text="Specialization">
+         <font>
+            <Font name="Times New Roman" size="15.0" />
+         </font>
+      </Label>
+      <TableView fx:id="showData" layoutX="22.0" layoutY="114.0" prefHeight="271.0" prefWidth="556.0" />
+      <Button layoutX="357.0" layoutY="73.0" mnemonicParsing="false" onAction="#showWorker" prefHeight="25.0" prefWidth="149.0" text="All Workers" />
+   </children>
+</AnchorPane>
