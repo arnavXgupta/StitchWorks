@@ -47,7 +47,7 @@ public class adminController {
             scene1.getWindow().hide();
 
 //            SendEmail s=new SendEmail();
-//            s.SendEmail("arnav090404@gmail.com", "Login Successful", "You have successfully logged into our portal");
+//            s.SendEmail("*****", "Login Successful", "You have successfully logged into our portal");
         }
         else
             lbl.setText("Incorrect Password..");
